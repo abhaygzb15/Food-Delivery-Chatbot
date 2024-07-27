@@ -65,7 +65,7 @@ The Food Delivery Chatbot is a conversational agent designed to enhance user int
 
 1. **Serve the HTML File:**
 
-    Open `website.html` in your web browser. Ensure that it is correctly linked to `styles.css` and images.
+    Open `home.html` in your web browser. Ensure that it is correctly linked to `styles.css` and images.
 
 2. **Embed the Chatbot:**
 
