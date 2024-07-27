@@ -1,6 +1,7 @@
 # Food Delivery Chatbot
 
 ## About
+
 The Food Delivery Chatbot is a conversational agent designed to enhance user interaction for food delivery services. It integrates with Dialogflow for natural language processing and utilizes a FastAPI backend to manage orders with a MySQL database. Users can place new orders, add or remove items, track order status, and receive real-time updates through a web interface.
 
 <p align="center">
@@ -15,43 +16,57 @@ The Food Delivery Chatbot is a conversational agent designed to enhance user int
   <img src="https://github.com/user-attachments/assets/b86894c6-fbec-420d-946e-3b1651d27bb0" width="300" />
 </p>
 
+## Technologies Used
 
-## Technologies Used:
-
-Dialogflow: For natural language understanding and chatbot capabilities.
-FastAPI: For building the backend API to handle chatbot requests.
-MySQL: For managing order data and tracking.
-HTML/CSS: For creating the front-end web interface.
+- **Dialogflow**: For natural language understanding and chatbot capabilities.
+- **FastAPI**: For building the backend API to handle chatbot requests.
+- **MySQL**: For managing order data and tracking.
+- **HTML/CSS**: For creating the front-end web interface.
 
 ## How to Use and Integrate
 
-1) **Set Up the Backend**
+### 1. Set Up the Backend
 
-* Clone the Repository:
-git clone https://github.com/yourusername/food-delivery-chatbot.git
-cd food-delivery-chatbot
+1. **Clone the Repository:**
 
-2) **Install Dependencies:**
-pip install fastapi uvicorn mysql-connector-python
+    ```bash
+    git clone https://github.com/yourusername/food-delivery-chatbot.git
+    cd food-delivery-chatbot
+    ```
 
-3) **Configure the Database:**
-Ensure MySQL is running, and create the database pandeyji_eatery. Set up the necessary database schema and stored procedures.
+2. **Install Dependencies:**
 
-4) **Run the Server:**
-uvicorn main:app --reload
+    ```bash
+    pip install fastapi uvicorn mysql-connector-python
+    ```
 
-5) **Integrate with Dialogflow**
+3. **Configure the Database:**
 
-* Create Intents and Contexts:
-Follow the video tutorial linked below to create the necessary intents and contexts in Dialogflow:
-https://youtu.be/2e5pQqBvGco?si=GM7_rEKCmVRxlwM9
+    Ensure MySQL is running, and create the database `pandeyji_eatery`. Set up the necessary database schema and stored procedures.
 
-* Update Dialogflow Integration:
-Ensure that the Dialogflow agent is correctly integrated with your FastAPI backend.
-Set Up the Frontend
+4. **Run the Server:**
 
-6) **Serve the HTML File:**
-Open website.html in your web browser. Ensure that it is correctly linked to styles.css and images.
+    ```bash
+    uvicorn main:app --reload
+    ```
 
-* Embed the Chatbot:
-The chatbot is embedded via an iframe. Update the src attribute of the iframe with the correct Dialogflow demo URL
+### 2. Integrate with Dialogflow
+
+1. **Create Intents and Contexts:**
+
+    Follow the video tutorial linked below to create the necessary intents and contexts in Dialogflow:  
+    [Video Tutorial](https://youtu.be/2e5pQqBvGco?si=GM7_rEKCmVRxlwM9)
+
+2. **Update Dialogflow Integration:**
+
+    Ensure that the Dialogflow agent is correctly integrated with your FastAPI backend.
+
+### 3. Set Up the Frontend
+
+1. **Serve the HTML File:**
+
+    Open `website.html` in your web browser. Ensure that it is correctly linked to `styles.css` and images.
+
+2. **Embed the Chatbot:**
+
+    The chatbot is embedded via an iframe. Update the `src` attribute of the iframe with the correct Dialogflow demo URL.
